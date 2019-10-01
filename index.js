@@ -31,14 +31,14 @@ const quiz = [{
          template += `<div class='quiz question'>${quiz[currentQuestion].question}</div>`
          quiz[currentQuestion].choices.forEach((choice, index) => {
             if (index == 0 || index == 2) {
-                template += `<input id='q${index}' class='choices buttonleft' value='${index}' type='radio' name='answers' ></input><label for='q${index}' class='choice left'>${choice}</label>`
+                template += `<input id='q${index}' class='choices buttonleft' value='${index}' alt='choice ${index}' type='radio' name='answers' ></input><label for='q${index}' class='choice left'>${choice}</label>`
             }
             
             if (index == 1 || index == 3) {
-                template += `<input id='q${index}' class='choices buttonright' value='${index}' type='radio' name='answers' ></input><label for='q${index}' class='choice right'>${choice}</label>`
+                template += `<input id='q${index}' class='choices buttonright' value='${index}' alt='choice ${index}' type='radio' name='answers' ></input><label for='q${index}' class='choice right'>${choice}</label>`
             }
             });
-         template += `<div><button class='finalAnswer' type='submit'>Final Answer</button></div>`
+         template += `<div><button class='finalAnswer' alt='submits answer' type='submit'>Final Answer</button></div>`
          template += `<div class='quiz score'> Your current score is : ${score} out of 5 </div>`
  
      $('#quiz').html(template)
@@ -50,7 +50,7 @@ const quiz = [{
  function renderQuizInitiator(){
      $('#quizContainer').html( `
         <section>Welcome to the videogame knowledge quiz<br/>  
-       <button id='startQuiz' type='submit'>Start the Quiz </button>
+       <button id='startQuiz' alt='starts quiz' type='submit'>Start the Quiz </button>
      </section>`)
         $('#quizContainer, #quiz').show();
         // $('#resultPage').hide();
@@ -59,7 +59,16 @@ const quiz = [{
         renderTemplate(quiz)
         $('#quizContainer').hide()
     });
+     $( "#startQuiz" ).keydown(function( event ) {
+        if ( event.which == 13 ) {
+        renderTemplate(quiz)
+        $('#quizContainer').hide()
+         event.preventDefault();
+        }
+    });
+        
  }
+ 
 
  function quizRegulator(){
      if (currentQuestion < quiz.length){
@@ -153,7 +162,7 @@ const quiz = [{
          console.log('hey...arent you supposed to reset')
         $('#quiz').hide();
      $('#resultPage').html(`<section>Congratulations! here is your score: ${score} out of 5!<br/>  
-         <button id='restartQuiz' type='button'>Restart the Quiz </button>
+         <button id='restartQuiz' alt='restarts quiz' type='button'>Restart the Quiz </button>
        </section>`)
        $('#resultPage').show()
        restartHandler();
