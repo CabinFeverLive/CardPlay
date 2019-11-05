@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+  background-color: rgba(239, 223, 200, 0.5);
+  font-family: 'Bangers';
+}
+
+#mainNav{
+    position: fixed;
+    background: gray;
+    height: 40px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navLogo{
+  width: 30px;
+  margin-top: 4px;
+  margin-left: 7px;
+}
+
+.logo{
+  float: right;
+  width: 30px;
+  padding-right: 5px;
+}
+
+
+
+#navLinks{
+  float: right;
+  margin-top: 7px;
+  margin-right: 15px;
+
+}
+
+#missionStatement{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-family: 'Bangers';
+    font-size: 26px;
+    line-height: 30px;
+    color: #514F77;
+}
+
+.missionContent{
+    background: #648792;
+    height: 200px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.mainBioContent{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   z-index: -100;
+}
+
+.narration{
+    position: absolute;
+    background: #f5f434;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    font-family: 'Bangers';
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.narration.bioOne{
+    padding: 1px 40px;
+    top: 11.7px;
+    right: -290px;
+    float: right;
+    position: relative;
+    
+}
+
+.narration.bioTwo{
+    padding: 1px 40px;
+    top: 30%;
+    left: -294px;
+    float: right;
+    position: relative;
+}
+
+.narration.bioThree{
+    padding: 1px 40px;
+    top: 60%;
+    right: -290px;
+    float: right;
+    position: relative;
+}
+
+.mainImage{
+    background: #548392;
+    height: 700px;
+    width: 300px;
+    margin-top: 5px;
+    background-image: url(https://media.giphy.com/media/JrTKvwVtM7K9w5SUyz/giphy.gif);
+    background-size: cover;  
+    background-repeat: no-repeat;
+}
+
+.bedHeadGif{ 
+  /* //Have the background layered on top of the Gif with alpha opacity set to it.  */
+  background-color: rgba(245, 245, 220, 0.4);
+  height: 700px;
+  width: 300px;
+  margin: 0 auto;
+   background-image: url(https://previews.123rf.com/images/ke77kz/ke77kz1601/ke77kz160100138/51678017-aging-grunge-paper-background-with-vintage-pattern-and-coffee-stain-vintage-paper-for-the-design-.jpg);
+   opacity: 0.2;
+}
+
+
+#portfolioCarosel{
+    background: #B3c0BB;
+    height:450px;
+    width: 100%;
+    margin-top: 15px;
+    position: relative;
+}
+
+.slideshow{
+  display: flex;
+  justify-content: center;
+}
+
+.quizPic{
+  margin-top: 35px;
+  max-height: 400px;
+	max-width: 600px;
+  margin-left: 195px;
+  border-radius: 5px;
+}
+
+.quiz-heading{
+  display: none;
+}
+
+
+
+
+.narration.topLeft{
+    padding: 1px 40px;
+    margin-top: 5px;
+    left: 20px;
+    position: absolute;
+    
+}
+
+.narration.bottomRight{
+    padding: 1px 20px;
+    height: 35px;
+    width: 200px;
+    float: right;
+    top: 400px;
+    position: relative;
+}
+
+
+#mainFooter{
+    background: #B9B9C4;
+    height: 30px;
+    width: 100%;
+    text-align: center; 
+    font-family: 'Bangers';
+    font-size: 22px;
+    line-height: 26px;
+    color: #514F77;  
+}
+
+@media only screen and (max-width: 500px) {
+  #mainNav {
+    width: 100%;
+  }
+  
+  .logo{
+    float: right;
+    width: 30px;
+    padding-right: 5px;
+  }
+
+  #missionStatement {
+		width: 80%;
+		margin: auto;
+		margin-top: 50px;
+		margin-bottom: 15px;
+		text-align: center;
+		font-size: 18px;
+		line-height: 25px;
+		color: #514f77;
+	}
+
+  
+
+	.narration {
+		/* padding: 1px 40px;
+	width: 300px;
+	border: 1.5px solid black;
+	background: #f5f434;
+	border-radius: 5px;
+	font-size: 17px;
+	line-height: 21px; */
+		display: none;
+  }
+
+  #portfolioCarosel {
+    background: #b3c0bb;
+    height: 30vh;
+    width: 100vw;
+    margin-top: 15px;
+    position: relative;
+  }
+
+  .quizPic {
+    margin: 0 auto;
+    margin-top: 0px;
+    max-height: 300px;
+    max-width: 250px;
+  }
+
+  .quizPic.one{
+    margin-top: 0px;
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  .quizPic.three{
+    margin-top: 0px;
+    max-height: 200px;
+    max-width: 200px;
+  }
+
+  .slideshow{
+    flex-direction:column ;
+    align-items: center;
+  }
+
+  .quiz-heading{
+    display: block;
+    font-size: 16px;
+    color: #514F77;
+  }
+  
+
+  #mainFooter {
+    width: 100vw;
+    background: #b9b9c4;
+    padding: 10px;
+    text-align: center;
+    color: #514F77; 
+  }
+ 
+}
+
+/* //Media Query for a 2 screen threshold
+//Gif on the left of the page with the narration boxes to the right of it 
+//Nav bar is still fixed but a bit thicker 
+//Carousel will be ontop of the narration boxes  */
+
+
+  
+
+
+
+/* //Remaining missions 
+//size the slideshow and the bottom of the page properly -check
+//fix the fixed navbar and absolute narr boxes 
+//activate the media query to show the narr boxes to the right of the newly sized Gif also size the slideshow for this format within media query
+//size the mission statement so that it remains still to both media query settings, as opposed to scrolling with the shrink and stretch of the page(default) 
+//add some thing justified to the bottom right within the footer that can symbolize the end of the page, perhaps something that leads you back to the top, for example an email. -check
+
+//max intent: Js Typed within the narr boxes, as well as other panels that fade in and out around the blink gif within the color and filter scheme (settled with slideshow) */

@@ -1,0 +1,173 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgba(239, 223, 200, 0.5);
+	font-family: 'Bangers';
+}
+
+.mainNav {
+	position: fixed;
+	background: gray;
+	height: 40px;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.navLogo {
+	width: 30px;
+	margin-top: 4px;
+	margin-left: 7px;
+}
+
+.logo {
+	float: right;
+	width: 30px;
+	padding-right: 5px;
+}
+
+.navLinks {
+	float: right;
+	margin-top: 7px;
+	margin-right: 15px;
+}
+
+.missionStatement {
+	width: 50%;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	font-size: 26px;
+	line-height: 30px;
+	color: #514f77;
+}
+
+.missionContent {
+	background: #648792;
+	height: 200px;
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.mainBioContent {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	z-index: -100;
+}
+
+.narration {
+	padding: 1px 40px;
+	width: 300px;
+	border: 1.5px solid black;
+	background: #f5f434;
+	border-radius: 5px;
+	font-size: 17px;
+	line-height: 21px;
+}
+
+.narration.bioOne {
+	top: 5%;
+	left: 100%;
+	position: absolute;
+}
+
+.narration.bioTwo {
+	top: 40%;
+	right: 100%;
+	position: absolute;
+}
+
+.narration.bioThree {
+	bottom: 5%;
+	left: 100%;
+	position: absolute;
+}
+
+.narration.topLeft {
+	width: auto;
+	top: 20px;
+	left: 20px;
+	position: absolute;
+}
+
+.narration.bottomRight {
+	width: auto;
+	top: 400px;
+	right: 20px;
+	position: absolute;
+}
+
+.mainImage {
+	width: 300px;
+	margin-top: 5px;
+	background-image: url(https://media.giphy.com/media/JrTKvwVtM7K9w5SUyz/giphy.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.bedHeadGif {
+	background-color: rgba(245, 245, 220, 0.4);
+	height: 700px;
+	width: 300px;
+	margin: 0 auto;
+	background-image: url(https://previews.123rf.com/images/ke77kz/ke77kz1601/ke77kz160100138/51678017-aging-grunge-paper-background-with-vintage-pattern-and-coffee-stain-vintage-paper-for-the-design-.jpg);
+	opacity: 0.2;
+}
+
+.portfolioCarosel {
+	background: #b3c0bb;
+	height: 60vh;
+	width: 100vw;
+	margin-top: 15px;
+	position: relative;
+}
+
+.slideshow {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+}
+
+.quizPic {
+	margin-top: 35px;
+	max-height: 400px;
+	max-width: 600px;
+}
+
+.mainFooter {
+	width: 100vw;
+	background: #b9b9c4;
+	padding: 10px;
+	text-align: center;
+	color: #514F77; 
+}
+
+@media only screen and (max-width: 375px) {
+	.missionStatement {
+		width: 80%;
+		margin: auto;
+		margin-top: 50px;
+		margin-bottom: 15px;
+		/* text-align: center; */
+		font-size: 18px;
+		line-height: 30px;
+		color: #514f77;
+	}
+
+	.narration {
+		/* padding: 1px 40px;
+	width: 300px;
+	border: 1.5px solid black;
+	background: #f5f434;
+	border-radius: 5px;
+	font-size: 17px;
+	line-height: 21px; */
+		display: none;
+	}
+}
