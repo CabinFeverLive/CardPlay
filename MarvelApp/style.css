@@ -23,6 +23,7 @@
   }
   
   .character.name{
+    flex-direction: column;
    align-items: center;
    justify-items: center;
    
@@ -30,5 +31,6 @@
   }
   
   .bio.Description{
+    flex-direction: column;
     align-self: flex-end;
   }
