@@ -1,21 +1,34 @@
 .container {
-    display: flex
+    
+  }
+
+  #search{
+      display: flex;
+      justify-content: center;
+      align-content: space-around;
+      margin-top: 2%;
+      margin-bottom: 2%;
   }
   
   #searchResults {
-    /* display: flex;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
+    align-content: center;
   }
-  
-  character.Name{
-   justify-content: right;
-  }
-  
+
   .bio.Picture{
-    justify-content: left;
+    align-self: flex-start;
+  }
+  
+  .character.name{
+   align-items: center;
+   justify-items: center;
+   
+   
   }
   
   .bio.Description{
-    justify-content: right;
+    align-self: flex-end;
   }
