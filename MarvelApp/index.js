@@ -34,9 +34,9 @@ function getCharacter(){
             else {
               for (let index = 0; index < jsonData.data.results.length; index++){
               //add jsonData.data.results[0].name via html
-              template += `<div class="character name"><h1>${jsonData.data.results[index].name}</h1></div>`
               // http://i.annihil.us/u/prod/marvel/i/mg/3/40/4bb4680432f73/portrait_xlarge.jpg
               template += `<img class="bio Picture" src='${jsonData.data.results[index].thumbnail.path}/portrait_incredible.${jsonData.data.results[index].thumbnail.extension}'>`
+              template += `<div class="character name"><h1>${jsonData.data.results[index].name}</h1></div>`
               template += `<div class="bio Description"><h3>${jsonData.data.results[index].description}</h3></div>`   
 
             }
