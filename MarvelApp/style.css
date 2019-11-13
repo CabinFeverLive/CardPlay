@@ -22,8 +22,12 @@
     align-self: flex-start;
   }
   
-  .character.name{
+  .character-content{
     flex-direction: column;
+
+  }
+  .character.name{
+    
    align-items: center;
    justify-items: center;
    
