@@ -1,0 +1,21 @@
+.container {
+    display: flex
+  }
+  
+  #searchResults {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  
+  character.Name{
+   justify-content: right;
+  }
+  
+  .bio.Picture{
+    justify-content: left;
+  }
+  
+  .bio.Description{
+    justify-content: right;
+  }
