@@ -38,3 +38,7 @@
     align-self: flex-end;
     padding: 10px;
   }
+
+  .character-comics{
+    flex-direction: row;
+  }

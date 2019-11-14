@@ -39,7 +39,12 @@ function getCharacter(){
               template += `<div class ="character-content">
               <div class="character-name"><h1>${jsonData.data.results[index].name}</h1></div>
               <div class="bio Description"><h3>${jsonData.data.results[index].description}</h3></div>
-              </div>`   
+              <div class="character-comics"><h4>Comics:${jsonData.data.results[index].comics.available}</h4></div>
+              <div class="character-comics"><h4>Series:${jsonData.data.results[index].series.available}</h4></div>
+              <div class="character-comics"><h4>Events:${jsonData.data.results[index].events.available}</h4></div>
+              <div class="character-comics"><h4>Stories:${jsonData.data.results[index].stories.available}</h4></div>
+              </div>`
+              // template += `<img class="comic-picture" src="${}"`   
 
             }
               // display results
