@@ -1,17 +1,3 @@
-.container {
-    
-  }
-
-  body{
-    
-  }
-
-  form, label{
-    width: 100%;
-    padding: 10px;
-    display: block;
-    
-  }
 
   .searchBar{
     display: block;
@@ -24,10 +10,15 @@
 
   #search{
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-content: space-around;
       margin-top: 2%;
       margin-bottom: 2%;
+      width: 50%;
+      margin: auto;
+
+
   }
   
   #searchResults {
@@ -37,8 +28,8 @@
     align-items: center;
     align-content: center;
     padding: 15px;
-    background-image:url(https://res.cloudinary.com/drbxih6it/image/upload/v1573757864/digital-screentone_xkr4qu.jpg);
-    background-repeat: repeat; 
+    width: 50%;
+    margin: auto;
   }
 
   .bio.Picture{
@@ -66,5 +57,6 @@
   }
 
   .character-comics{
-    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;    
   }
