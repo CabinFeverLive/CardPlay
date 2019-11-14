@@ -8,8 +8,10 @@ function getCharacter(){
     let hash = (MD5(`${ts}${pvtApiKey}${apiKey}`))
     
     const charInput = encodeURI(document.getElementById("search-character").value)
+   
 
     let urlString = `https://gateway.marvel.com/v1/public/characters?name=${charInput}&ts=${ts}&apikey=${apiKey}&hash=${hash}`
+    
 
     console.log('searching for', charInput)
     console.log('fetch:', urlString)
@@ -33,6 +35,7 @@ function getCharacter(){
             
             else {
               for (let index = 0; index < jsonData.data.results.length; index++){
+                // const charId = jsonData.data.results.id; VERY IMPORTANT FOR INCLUDING COMICS AND SECOND FETCH CALL!
               //add jsonData.data.results[0].name via html
               // http://i.annihil.us/u/prod/marvel/i/mg/3/40/4bb4680432f73/portrait_xlarge.jpg
               template += `<img class="bio Picture" src='${jsonData.data.results[index].thumbnail.path}/portrait_incredible.${jsonData.data.results[index].thumbnail.extension}'>`
