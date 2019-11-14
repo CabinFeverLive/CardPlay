@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    padding: 15px;
   }
 
   .bio.Picture{
@@ -24,17 +25,16 @@
   
   .character-content{
     flex-direction: column;
-
-  }
-  .character.name{
-    
-   align-items: center;
-   justify-items: center;
-   
-   
+    text-align: center;
   }
   
+  .character.name{
+   align-items: center;
+   justify-items: center;
+  }
+
   .bio.Description{
     flex-direction: column;
     align-self: flex-end;
+    padding: 10px;
   }
