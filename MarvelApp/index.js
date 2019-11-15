@@ -31,8 +31,8 @@ function getCharacter() {
         console.log(jsonData.data.results);
         const charId = jsonData.data.results[0].id;
         console.log(charId);
-        fetch(
-          `${BASE_URL}/${charId}/comics&ts=${ts}&apikey=${apiKey}&hash=${hash}`
+        fetch( 
+          `${BASE_URL}/${charId}/comics?ts=${ts}&apikey=${apiKey}&hash=${hash}`
         )
           .then(res => res.json())
           .then(data => console.log("comics", data));
@@ -55,8 +55,8 @@ function getCharacter() {
                   <h4>Events:${jsonData.data.results[index].events.available}</h4>
                   <h4>Stories:${jsonData.data.results[index].stories.available}</h4>
                 </div>
-              </div>`;
-            // template += `<img class="comic-picture" src="${}"`
+              </div>`
+                        // template += `<img class="comic-picture" src="${jsonData.data.comics.thumbnail.path.extension}"`
           }
           // display results
         }
