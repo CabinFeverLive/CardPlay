@@ -60,3 +60,11 @@
     display: flex;
     justify-content: space-evenly;    
   }
+
+  .relatedComics{
+    width: 50%;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+   
+    
+  }

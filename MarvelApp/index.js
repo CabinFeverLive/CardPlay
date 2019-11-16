@@ -15,8 +15,8 @@ function getCharacter() {
 
   let urlString = `${BASE_URL}?name=${charInput}&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
 
-  console.log("searching for", charInput);
-  console.log("fetch:", urlString);
+  //console.log("searching for", charInput);
+  //console.log("fetch:", urlString);
 
   fetch(urlString)
     .then(response => {
@@ -26,17 +26,14 @@ function getCharacter() {
         );
         return;
       }
+ 
+      let template = "";
+ 
       // Examine the text in the response
       response.json().then(jsonData => {
-        console.log(jsonData.data.results);
+        //console.log(jsonData.data.results);
         const charId = jsonData.data.results[0].id;
-        console.log(charId);
-        fetch( 
-          `${BASE_URL}/${charId}/comics?ts=${ts}&apikey=${apiKey}&hash=${hash}`
-        )
-          .then(res => res.json())
-          .then(data => console.log("comics", data));
-        let template = "";
+        //console.log(charId);
 
         if (jsonData.data.results.length < 1) {
           // No results display
@@ -61,7 +58,21 @@ function getCharacter() {
           // display results
         }
 
-        $("#searchResults").html(template);
+        fetch( 
+          `${BASE_URL}/${charId}/comics?ts=${ts}&apikey=${apiKey}&hash=${hash}`
+        )
+          .then(res => res.json())
+          .then(json => {
+            let arr = json.data.results
+            for (let index = 0; index < 9; index++) {
+              template += `<img class='relatedComics' src='${arr[index].thumbnail.path}/portrait_large.${arr[index].thumbnail.extension}'>`;
+            //console.log("comics", data)
+              console.log(arr[index].thumbnail.path)
+            }
+                       $("#searchResults").html(template);
+          });
+
+        // $("#searchResults").html(template);
 
         // Example to get the character info...
         //console.log(jsonData.data.results[0].name);
