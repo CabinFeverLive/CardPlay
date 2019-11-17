@@ -64,11 +64,16 @@ function getCharacter() {
           .then(res => res.json())
           .then(json => {
             let arr = json.data.results
+            template += `<div class="wrappingDiv">`
             for (let index = 0; index < 9; index++) {
-              template += `<img class='relatedComics' src='${arr[index].thumbnail.path}/portrait_large.${arr[index].thumbnail.extension}'>`;
+              
+              template += `
+                <img  class='relatedComics' src='${arr[index].thumbnail.path}/portrait_large.${arr[index].thumbnail.extension}'>`
+                
             //console.log("comics", data)
               console.log(arr[index].thumbnail.path)
             }
+            template += `</div>`;
                        $("#searchResults").html(template);
           });
 

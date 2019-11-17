@@ -28,7 +28,7 @@
     align-items: center;
     align-content: center;
     padding: 15px;
-    width: 50%;
+    width: 85%;
     margin: auto;
   }
 
@@ -54,6 +54,7 @@
     flex-direction: column;
     align-self: flex-end;
     padding: 10px;
+    width: 90%;
   }
 
   .character-comics{
@@ -61,10 +62,18 @@
     justify-content: space-evenly;    
   }
 
-  .relatedComics{
-    width: 50%;
+  .wrappingDiv{
+    display: flex;
     flex-wrap: wrap;
-   justify-content: space-evenly;
-   
+    flex-direction: row;
+    justify-content: space-around;
     
-  }
+}
+
+  .relatedComics{
+    flex: 0 0 32%;
+    height: 150px;
+    margin-bottom: 5px;
+    
+   
+    }
