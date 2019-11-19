@@ -7,7 +7,7 @@ function getDogImage() {
     .then(response => response.json())
     .then(responseJson => {
       if (responseJson.status === 'error'){
-        console.log('Dog breed is not found')
+        alert(`${dogBreedInput} is not found, sorry try again.`)
       }
       //  show error message
       else {
