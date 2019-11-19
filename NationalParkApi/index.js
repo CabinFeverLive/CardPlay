@@ -28,13 +28,7 @@ function displayResults(responseJson){
         </li>
       `
       }
-      html += `
-        <li>
-            <h3>${repo.fullName}</h3>
-            <p>${repo.description}</p>
-            <p>${repo.url}</p>
-        </li>
-      `
+      
   }
 
     html += `</ul>`
