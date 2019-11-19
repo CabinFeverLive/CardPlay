@@ -15,7 +15,19 @@ function displayResults(responseJson){
   `
     console.log(resultsArray)
   for (const repo of resultsArray){
-      console.log(repo)
+      // console.log(repo)
+      if(resultsArray.length < 1){
+        alert(`Sorry, that park cannot be found, please try again!`)
+      }
+      else{
+        html += `
+        <li>
+            <h3>${repo.fullName}</h3>
+            <p>${repo.description}</p>
+            <p>${repo.url}</p>
+        </li>
+      `
+      }
       html += `
         <li>
             <h3>${repo.fullName}</h3>
@@ -46,7 +58,8 @@ function getNatParkResults(query, maxResults=10){
     fetch(url)
     .then(response => response.json())
     .then(response => {
-        console.log(response);
+
+        // console.log(response);
         displayResults(response)
     })
     .catch(err => {
