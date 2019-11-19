@@ -7,17 +7,8 @@ function getDogImage() {
   const url = `https://dog.ceo/api/breeds/image/random/${dogValue}`;
   fetch(url)
     .then(response => response.json())
-    .then(responseJson => {
-        if (responseJson.status === 'error'){
-          alert(`${dogBreedInput} is not found, sorry try again.`)
-        }
-        //  show error message
-        else {
-          displayResults(responseJson)
-        }
-        //  displayResults()
-        // displayResults(responseJson))
-      }) 
+    .then(responseJson => 
+      displayResults(responseJson))
     .catch(error => alert('Something went wrong. Try again later.'));
     
 }
