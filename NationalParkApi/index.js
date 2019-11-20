@@ -22,7 +22,7 @@ function displayResults(responseJson){
         <li>
             <h3>${repo.fullName}</h3>
             <p>${repo.description}</p>
-            <p><a href='${repo.url}'></a></p>
+            <p>${repo.url}</p>
         </li>
         </ul>
       `
