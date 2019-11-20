@@ -14,7 +14,7 @@ function displayResults(responseJson){
     console.log(resultsArray)
   for (const repo of resultsArray){
       // console.log(repo)
-      if(responseJson.total < 1){
+      if(responseJson.length < 1){
         html += `Sorry, that park cannot be found, please try again!`
       }
       else{
