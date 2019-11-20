@@ -10,28 +10,25 @@ function formatQueryParams(params){
 
 function displayResults(responseJson){
   let resultsArray = responseJson.data
-  let html =`
-    <ul>
-  `
+  let html =''
     console.log(resultsArray)
   for (const repo of resultsArray){
       // console.log(repo)
-      if(responseJson.total.length < 1){
+      if(responseJson.total < 1){
         html += `Sorry, that park cannot be found, please try again!`
       }
       else{
-        html += `
+        html += `<ul>
         <li>
             <h3>${repo.fullName}</h3>
             <p>${repo.description}</p>
             <p><a href='${repo.url}'></a></p>
         </li>
+        </ul>
       `
       }
       
   }
-
-    html += `</ul>`
   $('#searchResults').html(html)
 
 }
