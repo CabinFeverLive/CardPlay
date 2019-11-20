@@ -11,7 +11,7 @@ function formatQueryParams(params){
 function displayResults(responseJson){
   let resultsArray = responseJson.data
   let html =''
-    console.log(resultsArray)
+    // console.log(resultsArray)
   for (const repo of resultsArray){
       // console.log(repo)
       if(responseJson.length < 1){
