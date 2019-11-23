@@ -53,7 +53,6 @@ function getCharacter() {
                   <h4>Stories:${jsonData.data.results[index].stories.available}</h4>
                 </div>
               </div>`
-                        // template += `<img class="comic-picture" src="${jsonData.data.comics.thumbnail.path.extension}"`
           }
           // display results
         }
@@ -66,12 +65,13 @@ function getCharacter() {
             let arr = json.data.results
             template += `<div class="wrappingDiv">`
             for (let index = 0; index < 9; index++) {
-              
+              // if(){}
+              // else{}
               template += `
-                <img  class='relatedComics' src='${arr[index].thumbnail.path}/portrait_large.${arr[index].thumbnail.extension}'>`
+                <img  class='relatedComics' src='${arr[index].thumbnail.path}/portrait_medium.${arr[index].thumbnail.extension}'>`
                 
             //console.log("comics", data)
-              console.log(arr[index].thumbnail.path)
+              console.log(arr)
             }
             template += `</div>`;
                        $("#searchResults").html(template);

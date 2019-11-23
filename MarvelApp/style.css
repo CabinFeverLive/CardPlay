@@ -1,11 +1,42 @@
+  body{
+    margin: 0;
+    padding: 0;
+    /* background: gray; */
+  }
 
+  .container{
+    background: #808080 ;
+  }
+
+  .container2{
+    background: #949494;
+  }
+
+  label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+  }
+  
   .searchBar{
     display: block;
     width: 100%;
+    height: 26px;
   }
 
   .searchButton{
-    display: inline-block;
+    border: 1px solid #ED1D24;
+    border-radius: 4px;
+    background: #ED1D24;
+    padding: 10px 20px;
+    margin-left: 2px;
+    font-size: 12px;
+    height: 40px;
+    width: 90px;
+    color:#fff;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;  
+    margin-top: 7px;
   }
 
   #search{
@@ -13,17 +44,15 @@
       flex-direction: column;
       justify-content: center;
       align-content: space-around;
-      margin-top: 2%;
       margin-bottom: 2%;
       width: 50%;
       margin: auto;
-
-
-  }
+ }
   
   #searchResults {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -42,12 +71,20 @@
     flex-direction: column;
     text-align: center;
     border: 2px solid black;
+    border-radius: 5px;
     margin: 10px;
+    background: yellow;
+    font-family: 'Roboto Condensed', sans-serif;
   }
   
   .character.name{
    align-items: center;
    justify-items: center;
+   font-family: 'Bangers', cursive;
+  }
+
+  h1{
+    font-family: 'Bangers', cursive;
   }
 
   .bio.Description{
@@ -67,6 +104,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    width: 33.3%;
     
 }
 
