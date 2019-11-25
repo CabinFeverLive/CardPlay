@@ -92,6 +92,8 @@ function getCharacter() {
 function watchForm() {
   $("#search").submit(event => {
     event.preventDefault();
+    $('.container2').removeAttr('hidden');
+    $('.containerStart').remove();
     getCharacter();
   });
 }
