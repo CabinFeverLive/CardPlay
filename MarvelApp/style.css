@@ -1,7 +1,7 @@
   body{
     margin: 0;
     padding: 0;
-    /* background: gray; */
+    background: #949494;
   }
 
   .containerStart{
@@ -16,7 +16,7 @@
   
   .containerStartThings{
     margin: auto;
-    margin-top: 40%;
+    margin-top: 25%;
     width: 50%;
     border: 3px solid black;
     border-radius: 4px;
