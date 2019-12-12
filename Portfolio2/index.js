@@ -1,11 +1,12 @@
 $( document ).ready(function() {
-	$('#backButtonLeft').hide();
-  $('#backButtonRight').hide();
-  var buttonReady = document.getElementById('backButtonLeft','showButtonRight','backButtonRight','showButtonLeft') 
+  	$('#backButtonLeft').hide();
+    $('#backButtonRight').hide();
+    $('.page-inner').hide();
     $('#showButtonLeft').toggleClass('active');
     $('#showButtonRight').toggleClass('active');
   $("#showButtonLeft").click(function() {
-	  console.log('clicked left section');
+    console.log('clicked left section');
+    $('.page-inner').show();
   	$('#sec-left').width('100%');
     $('#sec-right').hide();
     $('.mainImage').hide();
@@ -15,7 +16,8 @@ $( document ).ready(function() {
   });
   
   $('#backButtonLeft').click(function(){
-	  console.log('sections back to half-half');
+    console.log('sections back to half-half');
+    $('.page-inner').hide();
   	$("#sec-left").width("50%");
     $('#sec-right').show();
     $('.mainImage').show();
@@ -25,7 +27,8 @@ $( document ).ready(function() {
   });
   
   $("#showButtonRight").click(function() {
-	  console.log('clicked right section');
+    console.log('clicked right section');
+    $('.page-inner').show();
   	$('#sec-right').width('100%');  
     $('#sec-left').hide();
     $('.mainImage').hide();
@@ -35,7 +38,8 @@ $( document ).ready(function() {
   });
   
   $('#backButtonRight').click(function(){
-	  console.log('sections back to half-half');
+    console.log('sections back to half-half');
+    $('.page-inner').hide();
   	$('#sec-right').width('50%');  
     $('#sec-left').show();
     $('.mainImage').show();
