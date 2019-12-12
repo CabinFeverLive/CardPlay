@@ -60,8 +60,37 @@ body {
     -ms-transition: opacity .2s ease-in;
     transition: opacity .2s ease-in;
     padding: 3em;
+    background: #33546D;
+  }
+
+  .page-inner h1{
+    font-weight: 300;
+    font-size: 2.4em;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+  }
+
+  .page-inner p{
+    font-weight: 300;
+    font-size: 1.8em;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+  }
+
+  #sec-right .page-inner{
+    background: #fff;
   }
   
+  #sec-right .page-inner h1{
+    color: black;
+  }
+
+  #sec-right .page-inner p{
+    color: black;
+  }
   
   .page-inner.active{
     opacity: 1;
