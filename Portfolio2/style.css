@@ -104,7 +104,9 @@ body {
     z-index: -1;
   }
 
-  
+  .innerPicture{
+    width: 10%;
+  }
   
   button{
     background: none; 
@@ -148,6 +150,30 @@ body {
 
   #sec-left > img{
       margin-left: 3%;
+  }
+
+  .showCase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .quizApp{
+    width: 50%;
+    padding: 20px;
+  }
+
+  .marvelApp{
+    width: 50%;
+    padding: 20px;
+  }
+
+  .pictureCaption{
+    text-align: left;
+    float: right;
+    font-size: .7em;
+
   }
   
   /* body{
