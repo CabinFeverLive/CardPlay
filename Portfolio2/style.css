@@ -22,7 +22,7 @@ body {
   }
 
   .front{
-    font-size: 45px;
+    font-size: 26px;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
   }
@@ -171,5 +171,54 @@ body {
     text-align: left;
     float: right;
     font-size: .7em;
+  }
 
+  @media all and (max-width: 480px) { 
+    
+    .navBar > a {
+      padding: 1.4em;
+      font-size: 19px;
+    }
+
+    button{
+      font-size: 17px;
+    }
+
+    .mainImage{
+      width: 28%;
+      bottom: 0px;
+      }
+    
+    .page-inner{
+      padding: .8em;
+    }
+
+    .page-inner h1{
+      font-weight: 100;
+      font-size: 1.2em;
+    }
+
+    .page-inner p{
+      font-weight: 150;
+      font-size: .8em;
+      text-align: left;
+      padding-left: .5em;
+      padding-right: .5em;
+    }
+
+    .quizApp{
+      width: 70%;
+      padding: 20px;
+    }
+  
+    .marvelApp{
+      width: 70%;
+      padding: 20px;
+    }
+   
+    .pictureCaption{
+      font-size: .6em;
+      padding-right: .2em;
+      padding-left: .2em;
+    }
   }
