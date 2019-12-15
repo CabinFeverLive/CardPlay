@@ -70,9 +70,15 @@ body {
     color: #fff;
   }
 
+  .page-inner h2{
+    font-weight: 80;
+    font-size: 300;
+    font-family: 'Montserrat', sans-serif;
+  }
+
   .page-inner p{
-    font-weight: 225;
-    font-size: 1.8em;
+    font-weight: 125;
+    font-size: 1.4em;
     text-align: left;
     padding-left: 1em;
     padding-right: 1em;
@@ -158,12 +164,12 @@ body {
   }
 
   .quizApp{
-    width: 50%;
+    width: 70%;
     padding: 20px;
   }
 
   .marvelApp{
-    width: 50%;
+    width: 70%;
     padding: 20px;
   }
 
@@ -181,7 +187,7 @@ body {
     }
 
     button{
-      font-size: 17px;
+      font-size: 16px;
     }
 
     .mainImage{
@@ -217,8 +223,8 @@ body {
     }
    
     .pictureCaption{
-      font-size: .6em;
-      padding-right: .2em;
-      padding-left: .2em;
+      font-size: .5em;
+      padding-right: 6em;
+      padding-left: 6em;
     }
   }
