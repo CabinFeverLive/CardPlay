@@ -21,8 +21,8 @@ function getCharacter() {
   fetch(urlString)
     .then(response => {
       if (response.status !== 200) {
-        console.log(
-          "Looks like there was a problem. Status Code: " + response.status
+        alert(
+          `That Marvel character cannot be found, please try again.`
         );
         return;
       }
