@@ -191,8 +191,17 @@ body {
     }
 
     .mainImage{
-      width: 28%;
+
+      width: 53%;
       bottom: 0px;
+      }
+
+      #sec-right > img{
+        margin-left: 0%;
+    }
+    
+      #sec-left > img{
+          margin-left: 0%;
       }
     
     .page-inner{
