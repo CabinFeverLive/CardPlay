@@ -204,6 +204,9 @@ body {
           margin-left: 0%;
       }
     
+      #sec-right > a{
+        font-size: 3px;
+      }
     .page-inner{
       padding: .8em;
     }
