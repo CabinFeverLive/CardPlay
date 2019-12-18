@@ -191,20 +191,19 @@ body {
     }
 
     .mainImage{
-
       width: 53%;
       bottom: 0px;
       }
 
       #sec-right > img{
-        margin-left: 0%;
+        margin-left: -7%;
     }
     
       #sec-left > img{
-          margin-left: 0%;
+        margin-left: 0%;
       }
     
-      #sec-right > a{
+      #sec-right a{
         font-size: 3px;
       }
     .page-inner{
