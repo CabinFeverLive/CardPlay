@@ -20,17 +20,18 @@ function getCharacter() {
 
   fetch(urlString)
     .then(response => {
-      if (response.status !== 200) {
-        alert(
-          `That Marvel character cannot be found, please try again.`
-        );
-        return;
-      }
+     
  
       let template = "";
  
       // Examine the text in the response
       response.json().then(jsonData => {
+        if (jsonData.data.results.length === 0 ) {
+          alert(
+            `That Marvel character cannot be found, please try again.`
+          );
+          return;
+        }
         //console.log(jsonData.data.results);
         const charId = jsonData.data.results[0].id;
         //console.log(charId);
@@ -63,15 +64,17 @@ function getCharacter() {
           .then(res => res.json())
           .then(json => {
             let arr = json.data.results
+            let filteredArr = arr.filter(result => !result.thumbnail.path.includes('image_not_available'));
+            console.log(filteredArr)
+             
             template += `<div class="wrappingDiv">`
             for (let index = 0; index < 9; index++) {
-              // if(){}
-              // else{}
+              
               template += `
-                <img  class='relatedComics' src='${arr[index].thumbnail.path}/portrait_medium.${arr[index].thumbnail.extension}'>`
+                <img  class='relatedComics' src='${filteredArr[index].thumbnail.path}/portrait_medium.${filteredArr[index].thumbnail.extension}'>`
                 
             //console.log("comics", data)
-              console.log(arr)
+              console.log(filteredArr)
             }
             template += `</div>`;
                        $("#searchResults").html(template);
