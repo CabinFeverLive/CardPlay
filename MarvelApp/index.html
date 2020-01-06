@@ -8,20 +8,22 @@
   <title>Marvel Index App</title>
   <link href="https://fonts.googleapis.com/css?family=Bangers|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
- 
+  <link rel="icon" 
+  type="image/png" 
+  href="http://icons.iconarchive.com/icons/dominicanjoker/comic-publisher-folder/64/Marvel-icon.png">
 </head>
 
 <body>
   <div class='container'>
       <form id="search">
-          <label>Search Marvel Character</label>
+          <header>Search Marvel Character</header>
             <input class="searchBar" type="text" name="name" id="search-character" placeholder="i.e...Iron Man, Hulk, Spider-Man" required>
             <input class="searchButton"type="submit" value="Search!">
         </form>
   </div>
-  <div class='containerStart' >
+  <div class='containerStart'>
     <div class="containerStartThings">
-    <header>Marvel Character Index</header>
+    <label>Marvel Character Index</label>
     <main>This is the marvel index<br>Find information on any character<br>in the Marvel Universe!</main>
    </div>
   </div>
@@ -29,6 +31,7 @@
 	
  
       <div id="searchResults"></div>
+      <div class="errorMessage"></div>
       <div id="comicResults"></div>
     <p id="js-error-message" class="error-message"></p>
   </div>

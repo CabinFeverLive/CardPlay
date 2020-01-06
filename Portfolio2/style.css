@@ -179,7 +179,7 @@ body {
     font-size: .7em;
   }
 
-  @media all and (max-width: 480px) { 
+  @media all and (min-width: 480px) { 
     
     .navBar > a {
       padding: 1.4em;
