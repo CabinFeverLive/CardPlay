@@ -64,7 +64,7 @@ function getCharacter() {
           .then(json => {
             let arr = json.data.results
             let filteredArr = arr.filter(result => !result.thumbnail.path.includes('image_not_available'));
-            console.log(filteredArr)
+            // console.log(filteredArr)
              
             template += `<div class="wrappingDiv">`
             for (let index = 0; index < 9; index++) {
@@ -72,7 +72,7 @@ function getCharacter() {
               template += `
                 <img alt='related character comics' class='relatedComics' src='${filteredArr[index].thumbnail.path}/portrait_medium.${filteredArr[index].thumbnail.extension}'>`
                 
-              console.log(filteredArr)
+              // console.log(filteredArr)
             }
             template += `</div>`;
               attachTemplate(template)            
@@ -82,6 +82,12 @@ function getCharacter() {
     .catch(function(err) {
       console.log("Fetch Error :-S", err);
     });
+    fetch(`https://open.api.ebay.com/shopping?callname=FindItems&responseencoding=JSON&appid=randypre-MarvelCh-PRD-682b90351-404642b0&siteid=0&version=967&QueryKeywords=Spider%20Man&AvailableItemsOnly=true&MaxEntries=5`, {mode: 'cors'})
+    .then(res => res.json())
+    .then(json => { 
+      console.log(json.item.ViewItemURLForNaturalSearch)
+
+    })
 }
 
 function attachTemplate(template){
