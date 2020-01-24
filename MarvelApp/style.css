@@ -79,6 +79,10 @@
     margin-bottom: 20px;
   }
 
+  .shopButton{
+    border:1px solid black;
+  }
+
   #search{
       display: flex;
       flex-direction: column;

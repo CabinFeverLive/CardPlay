@@ -4,6 +4,9 @@ const pvtApiKey = "d0f3055ba17fb13b0b0d473575e7c8d4ca22d949";
 const searchCharUrl = `http://gateway.marvel.com/v1/public/`;
 const BASE_URL = "https://gateway.marvel.com/v1/public/characters";
 const ts = new Date().getTime();
+const corsWorkAround = 'https://cors-anywhere.herokuapp.com/'
+
+let eBayurl = 'https://open.api.ebay.com/shopping?callname=FindItems&responseencoding=JSON&appid=randypre-MarvelCh-PRD-682b90351-404642b0&siteid=0&version=967&QueryKeywords=Spider%20Man&AvailableItemsOnly=true&MaxEntries=5';
 let hash = MD5(`${ts}${pvtApiKey}${apiKey}`);
 
 function generateCharacterUrl(){
@@ -82,12 +85,16 @@ function getCharacter() {
     .catch(function(err) {
       console.log("Fetch Error :-S", err);
     });
-    fetch(`https://open.api.ebay.com/shopping?callname=FindItems&responseencoding=JSON&appid=randypre-MarvelCh-PRD-682b90351-404642b0&siteid=0&version=967&QueryKeywords=Spider%20Man&AvailableItemsOnly=true&MaxEntries=5`, {mode: 'cors'})
-    .then(res => res.json())
-    .then(json => { 
-      console.log(json.item.ViewItemURLForNaturalSearch)
 
+    fetch(corsWorkAround + eBayurl)
+    .then(resp => resp.json())
+    .then(j => {
+      template += `<div class="shopButton"><button onclick='window.location.href = '${j.ItemSearchURL}'>Shop Here</button></div>`
+      console.log(j.ItemSearchURL);
+      
+      attachTemplate(template)
     })
+    
 }
 
 function attachTemplate(template){

@@ -23,10 +23,11 @@
 <script type="text/babel">
 
 function App(props){
+  console.log(props)
   return (
     <section>
       <header>  
-        <h1>Sally Student</h1>
+        <h1>{props.name}</h1>
       </header>
       <main className="baseContent">
         <img className="bioPicture" src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"
@@ -62,7 +63,9 @@ function App(props){
   )
 }
   ReactDOM.render(
-    <App />,
+    <App 
+      name='Sally Student'  
+    />,
     document.querySelector('#application-root')
   );
 </script>
