@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="application-root"></div>
+
+    <script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+
+<script type="text/babel">
+
+function App(props){
+  return (
+    <section>
+      <header>  
+        <h1>Sally Student</h1>
+      </header>
+      <main className="baseContent">
+        <img className="bioPicture" src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"
+          height="720" width="600" alt="Sally Student wearing yellow sweater"/>
+        <section className="education">
+          <h2>Edudcation</h2>
+          <p> Premium School of the Students</p>
+        </section>
+        <section className="employment">
+          <h2>Employment History</h2>
+          <ol>
+            <li>Advisor for BackWIRE 
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quibusdam iste rerum
+                doloremque officia molestias.</p>
+            </li>
+            <li>Assistant Director for Eldon Branders <p>Sunt sed nesciunt veniam beatae aut debitis labore dolore facilis
+                ea a ex quis porro?</p>
+            </li>
+          </ol>
+        </section>
+      </main>
+      <footer className="foot">
+        <address>
+          Written by <a href="mailto:SallyStudent@Stundents.com">Sally Student herself</a>.<br/>
+          Visit us at:<a href="SallyStundent.com">SallyStudent.com</a><br/>
+            SallyStudent.com<br/>
+            Box 564, Disneyland<br/>
+            USA
+        </address>
+        <p>Phone: 345 453 4567</p>
+      </footer>
+      </section>
+  )
+}
+  ReactDOM.render(
+    <App />,
+    document.querySelector('#application-root')
+  );
+</script>
+
+</body>
+</html>

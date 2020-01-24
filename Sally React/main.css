@@ -1,0 +1,38 @@
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) { 
+    
+    .body{
+        display: block;
+    }
+
+    .bioPicture{
+        width: 350px;
+        height:500px;
+        margin: 0 auto;
+    }
+
+    .baseContent{
+        margin: 0 auto;
+    }
+
+    .education{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .employment{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    ol{
+        list-style-type:none;
+    }
+    .foot{
+        margin: 0 auto;
+        text-align: center;
+    }
+ }
