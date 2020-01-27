@@ -6,7 +6,8 @@ const BASE_URL = "https://gateway.marvel.com/v1/public/characters";
 const ts = new Date().getTime();
 const corsWorkAround = 'https://cors-anywhere.herokuapp.com/'
 
-let eBayurl = 'https://open.api.ebay.com/shopping?callname=FindItems&responseencoding=JSON&appid=randypre-MarvelCh-PRD-682b90351-404642b0&siteid=0&version=967&QueryKeywords=Spider%20Man&AvailableItemsOnly=true&MaxEntries=5';
+let eBayurl =''
+
 let hash = MD5(`${ts}${pvtApiKey}${apiKey}`);
 
 function generateCharacterUrl(){
@@ -16,6 +17,7 @@ function generateCharacterUrl(){
     document.getElementById("search-character").value
   );
 
+  eBayurl = `https://open.api.ebay.com/shopping?callname=FindItems&responseencoding=JSON&appid=randypre-MarvelCh-PRD-682b90351-404642b0&siteid=0&version=967&QueryKeywords=${charInput}&AvailableItemsOnly=true&MaxEntries=5`;
   
 
   return `${BASE_URL}?name=${charInput}&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
@@ -57,9 +59,11 @@ function getCharacter() {
                   <h4>Stories:${jsonData.data.results[index].stories.available}</h4>
                 </div>
               </div>`
+              
           }
+          
         }
-
+        
         fetch( 
           `${BASE_URL}/${charId}/comics?ts=${ts}&apikey=${apiKey}&hash=${hash}`
         )
@@ -78,7 +82,8 @@ function getCharacter() {
               // console.log(filteredArr)
             }
             template += `</div>`;
-              attachTemplate(template)            
+             getEbayStuff(template)
+             attachTemplate(template)            
           });
       });
     })
@@ -86,15 +91,23 @@ function getCharacter() {
       console.log("Fetch Error :-S", err);
     });
 
-    fetch(corsWorkAround + eBayurl)
-    .then(resp => resp.json())
-    .then(j => {
-      template += `<div class="shopButton"><button onclick='window.location.href = '${j.ItemSearchURL}'>Shop Here</button></div>`
-      console.log(j.ItemSearchURL);
-      
-      attachTemplate(template)
-    })
+   
     
+}
+
+function getEbayStuff(template){
+  fetch(corsWorkAround + eBayurl)
+  .then(resp => resp.json())
+  .then(j => {
+    let buybuttonhtml = `<div class="shopButton"><a target='_blank' href = '${j.Item[0].ViewItemURLForNaturalSearch}'>Shop Here!</a></div>`
+    console.log(j.Item);
+    
+    attatchBuyButton(buybuttonhtml)
+  })
+}
+
+function attatchBuyButton(template){
+  $('#buyButton').html(template)
 }
 
 function attachTemplate(template){
