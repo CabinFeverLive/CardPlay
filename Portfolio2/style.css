@@ -103,7 +103,7 @@ body {
   }
   
   .mainImage{
-    width: 30%;
+    width: 40%;
     bottom: 0px;
     position: absolute;
     /* border: 1 */
@@ -179,7 +179,7 @@ body {
     font-size: .7em;
   }
 
-  @media all and (min-width: 480px) { 
+  @media all and (max-width: 480px) { 
     
     .navBar > a {
       padding: 1.4em;
