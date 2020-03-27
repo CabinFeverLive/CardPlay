@@ -60,14 +60,14 @@ body {
     -ms-transition: opacity .2s ease-in;
     transition: opacity .2s ease-in;
     padding: 3em;
-    background: #33546D;
+    background: #fff;
   }
 
   .page-inner h1{
     font-weight: 300;
     font-size: 2.4em;
     font-family: 'Oswald', sans-serif;
-    color: #fff;
+    color: black;
   }
 
   .page-inner h2{
@@ -83,11 +83,11 @@ body {
     padding-left: 1em;
     padding-right: 1em;
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color: #black;
   }
 
   #sec-right .page-inner{
-    background: #fff;
+    background: #black;
   }
   
   #sec-right .page-inner h1{
@@ -149,7 +149,7 @@ body {
   }
   
 #sec-right > img{
-    margin-left: 6%;
+    margin-left: 4%;
 }
 
   #sec-left > img{
