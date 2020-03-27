@@ -238,4 +238,25 @@ body {
       padding-right: 6em;
       padding-left: 6em;
     }
+
+    .leftArt ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .leftArt img{
+      width:275px;
+      height:250px;
+    }
+
+    .leftArt .img4{
+      height:475px;
+    }
+
+    .leftArt li{
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+    }
   }
