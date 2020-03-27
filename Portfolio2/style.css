@@ -110,6 +110,7 @@ body {
     z-index: -1;
 
   }
+  
 
   
   button{
@@ -177,6 +178,28 @@ body {
     text-align: left;
     float: right;
     font-size: .7em;
+  }
+
+  .leftArt ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .leftArt img{
+    width:600px;
+    height:600px;
+  }
+
+  .leftArt .img4{
+    width: 450px;
+    height:900px;
+  }
+
+  .leftArt li{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
   }
 
   @media all and (max-width: 480px) { 
@@ -251,6 +274,7 @@ body {
     }
 
     .leftArt .img4{
+      width: 235px;
       height:475px;
     }
 
