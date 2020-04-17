@@ -4,7 +4,7 @@ $( document ).ready(function() {
     $('.page-inner').hide();
     $('#showButtonLeft').toggleClass('active');
     $('#showButtonRight').toggleClass('active');
-  $("#showButtonLeft").click(function() {
+    $("#showButtonLeft").click(function() {
     $('.page-inner').show();
   	$('#sec-left').width('100%');
     $('#sec-right').hide();
@@ -44,6 +44,18 @@ $( document ).ready(function() {
     $('#backButtonRight').hide();
   });  
   
+  // function renderLogo(){
+  //   fetch("logo.json")
+  //     .then(function(response){
+  //         return response.json();
+  //     })
+  //     .then(function(logo){
+  //       console.log(logo)
+      
+  //     })
+  //   }
+  
+
 });
 
 

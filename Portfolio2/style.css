@@ -266,6 +266,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      margin-right: 1em;
     }
 
     .leftArt img{
@@ -282,5 +283,23 @@ body {
       list-style: none;
       align-items: center;
       justify-content: center;
+    }
+
+    .logoContainer{
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .logoContainer > img{
+      height:100px;
+      width:100px;
+    }
+
+    .stackBoarder{
+      height:8em;
+      width:100%;
     }
   }
