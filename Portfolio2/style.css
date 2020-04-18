@@ -285,21 +285,51 @@ body {
       justify-content: center;
     }
 
-    .logoContainer{
+    .logoContainerLeft{
       display: flex;
       list-style: none;
-      flex-direction: column;
+      flex-direction: row;
       margin: 0 auto;
+      margin-right: 71px;
+      margin-bottom: 30px;
+      justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      width: 60%;
     }
 
-    .logoContainer > img{
-      height:100px;
-      width:100px;
+    .logoContainerRight{
+      display: flex;
+      list-style: none;
+      flex-direction: row;
+      margin: 0 auto;
+      margin-right: 56px;
+      margin-bottom: 30px;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 60%;
+    }
+
+    .logoContainerLeft > img{
+      height:50px;
+      width:50px;
+      margin: 3px;
+    }
+
+    .logoContainerRight > img{
+      height:50px;
+      width:50px;
+      margin: 3px;
     }
 
     .stackBoarder{
       height:8em;
       width:100%;
+    }
+
+    .stackBoarderLeft{
+      height:9em;
+      width: 100%;
     }
   }
