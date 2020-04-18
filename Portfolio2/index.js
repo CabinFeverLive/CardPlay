@@ -46,7 +46,7 @@ $( document ).ready(function() {
   
   $(function(){
     $(".typed").typed({
-      strings: ["drawing I'm Wireframing", "wireframing I'm importing psd files.", "importing, I'm npx creating a React app."],
+      strings: ["sleeping I'm Wireframing", "wireframing I'm importing psd files.", "importing, I'm npx creating a React app."],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
       // typing speed
@@ -60,7 +60,7 @@ $( document ).ready(function() {
       // loop
       loop: true,
       // false = infinite
-      loopCount: 5,
+      loopCount: 500,
       // show cursor
       showCursor: false,
       // character for cursor
@@ -80,7 +80,41 @@ $( document ).ready(function() {
     });
   });
   
-  
+  $(function(){
+    $(".typedLeft").typed({
+      strings: ["drawing I'm Wireframing", "wireframing I'm importing psd files.", "importing, I'm npx creating a React app."],
+      // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+      stringsElement: null,
+      // typing speed
+      typeSpeed: 30,
+      // time before typing starts
+      startDelay: 1200,
+      // backspacing speed
+      backSpeed: 20,
+      // time before backspacing
+      backDelay: 500,
+      // loop
+      loop: true,
+      // false = infinite
+      loopCount: 500,
+      // show cursor
+      showCursor: false,
+      // character for cursor
+      cursorChar: "|",
+      // attribute to type (null == text)
+      attr: null,
+      // either html or text
+      contentType: 'html',
+      // call when done callback function
+      callback: function() {},
+      // starting callback function before each string
+      preStringTyped: function() {},
+      //callback for every typed string
+      onStringTyped: function() {},
+      // callback for reset
+      resetCallback: function() {}
+    });
+  });
 
 });
 
