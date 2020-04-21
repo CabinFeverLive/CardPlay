@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $('.projectSlide').slick();
   	$('#backButtonLeft').hide();
     $('#backButtonRight').hide();
     $('.page-inner').hide();
@@ -43,6 +44,8 @@ $( document ).ready(function() {
     $('#showButtonRight').show();
     $('#backButtonRight').hide();
   });  
+
+  
   
   $(function(){
     $(".typed").typed({
