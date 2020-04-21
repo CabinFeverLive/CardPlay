@@ -357,6 +357,23 @@ body {
       transform: translate(-50%,-50%);
     }
 
+    .typed_wrapMain {
+      display: block;
+      width: 125px;
+      height: auto;
+      padding: 15px;
+      color: lightslategrey;
+      /*centers it in the .banner*/
+      position: relative;
+      top: 40%;
+      left: 50%;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+    }
+
     .typed_wrapLeft {
       display: block;
       

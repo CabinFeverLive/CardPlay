@@ -1,10 +1,13 @@
 $( document ).ready(function() {
     $('.projectSlide').slick();
+    $('.artSlide').slick();
+
   	$('#backButtonLeft').hide();
     $('#backButtonRight').hide();
     $('.page-inner').hide();
     $('#showButtonLeft').toggleClass('active');
     $('#showButtonRight').toggleClass('active');
+
     $("#showButtonLeft").click(function() {
     $('.page-inner').show();
   	$('#sec-left').width('100%');
@@ -13,6 +16,7 @@ $( document ).ready(function() {
     $('.page-inner').css({opacity:'1', transition:'2s'});
     $('#backButtonLeft').show();
     $('#showButtonLeft').hide();
+    $('.typedMain').hide();
   });
   
   $('#backButtonLeft').click(function(){
@@ -22,7 +26,9 @@ $( document ).ready(function() {
     $('.mainImage').show();
     $('.page-inner').css({opacity:'0', transition:'0s'});
     $('#showButtonLeft').show();
+    $('.typeMain').show();
     $('#backButtonLeft').hide();
+    
   });
   
   $("#showButtonRight").click(function() {
@@ -33,6 +39,8 @@ $( document ).ready(function() {
     $('.page-inner').css({opacity:'1', transition:'2s'})
     $('#backButtonRight').show();
     $('#showButtonRight').hide();
+    $('.typedMain').hide();
+
   });
   
   $('#backButtonRight').click(function(){
@@ -43,6 +51,7 @@ $( document ).ready(function() {
     $('.page-inner').css({opacity:'0', transition:'0s'});
     $('#showButtonRight').show();
     $('#backButtonRight').hide();
+    $('.typedMain').show();
   });  
 
   
@@ -82,10 +91,46 @@ $( document ).ready(function() {
       resetCallback: function() {}
     });
   });
+
+  $(function(){
+    $(".typedMain").typed({
+      strings: ["All elements on this site was hand drawn digitally by me","All elements were developed and acheived with jQuery..by me","No bootstrap or Material UI for practice although I use BS and tachyons..","...but don't sleep...I get down with React as well"],
+      // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+      stringsElement: null,
+      // typing speed
+      typeSpeed: 30,
+      // time before typing starts
+      startDelay: 1200,
+      // backspacing speed
+      backSpeed: 20,
+      // time before backspacing
+      backDelay: 500,
+      // loop
+      loop: true,
+      // false = infinite
+      loopCount: 500,
+      // show cursor
+      showCursor: false,
+      // character for cursor
+      cursorChar: "|",
+      // attribute to type (null == text)
+      attr: null,
+      // either html or text
+      contentType: 'html',
+      // call when done callback function
+      callback: function() {},
+      // starting callback function before each string
+      preStringTyped: function() {},
+      //callback for every typed string
+      onStringTyped: function() {},
+      // callback for reset
+      resetCallback: function() {}
+    });
+  });
   
   $(function(){
     $(".typedLeft").typed({
-      strings: ["sleeping, I'm drinking coffee", "drinking coffee, I'm plotting.", "plotting, Im creating a group of rough sketeches.", "rough sketching, I'm choosing a color pallete to close rough comps", "closing rough comps, I'm selecting from the bunch for final drafts", "finalzing drafts in color and or animation, Im solidifying those plots into scripts", "scripting I'm building the dialog in between the plot points of said script.","dialoging and monologing, im settling down..for sleep.."],
+      strings: ["sleeping, I'm drinking coffee", "drinking coffee, I'm plotting.", "plotting, Im creating a group of rough sketeches.", "rough sketching, I'm choosing a color palette to close rough comps", "closing rough comps, I'm selecting from the bunch for final drafts", "finalzing drafts in color and or animation, Im solidifying those plots into scripts", "scripting I'm building the dialog in between the plot points of said script.","dialoging and monologing, im settling down..for sleep.."],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
       // typing speed
