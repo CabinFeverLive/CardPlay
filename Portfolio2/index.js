@@ -49,7 +49,7 @@ $( document ).ready(function() {
   
   $(function(){
     $(".typed").typed({
-      strings: ["sleeping I'm Wireframing", "wireframing I'm importing psd files.", "importing, I'm npx creating a React app."],
+      strings: ["sleeping I'm Wireframing", "wireframing I'm importing psd files.", "importing PSDs PNGs GIFs, I'm npx creating a React app.","creating react apps I'm running npm install, sometimes even yarn", "using package managers to install the best mods, Im building high fidelity prototypes from said wireframes","populating componetents and creating proper relationships between them with use of props and state, Im gathering other resources from my UI kit to close the prototype", "closing prototypes to pitch for production, I'm testing components using Enzyme / Jest.","testing components, I'm deploying approved sites/apps","deploying...Im...(yawns)...getting sleepy.."],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
       // typing speed
@@ -85,7 +85,7 @@ $( document ).ready(function() {
   
   $(function(){
     $(".typedLeft").typed({
-      strings: ["drawing I'm Wireframing", "wireframing I'm importing psd files.", "importing, I'm npx creating a React app."],
+      strings: ["sleeping, I'm drinking coffee", "drinking coffee, I'm plotting.", "plotting, Im creating a group of rough sketeches.", "rough sketching, I'm choosing a color pallete to close rough comps", "closing rough comps, I'm selecting from the bunch for final drafts", "finalzing drafts in color and or animation, Im solidifying those plots into scripts", "scripting I'm building the dialog in between the plot points of said script.","dialoging and monologing, im settling down..for sleep.."],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
       // typing speed
