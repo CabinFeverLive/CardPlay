@@ -365,7 +365,7 @@ body {
       color: lightslategrey;
       /*centers it in the .banner*/
       position: relative;
-      top: 40%;
+      top: 10%;
       left: 50%;
       -webkit-transform: translate(-50%,-50%);
       -moz-transform: translate(-50%,-50%);
