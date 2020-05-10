@@ -94,7 +94,7 @@ $( document ).ready(function() {
 
   $(function(){
     $(".typedMain").typed({
-      strings: ["All elements on this site was hand drawn digitally by me","All elements were developed and acheived with jQuery..by me","No bootstrap or Material UI for practice although I use BS and tachyons..","...but don't sleep...I get down with React as well"],
+      strings: ["All elements on this site are hand drawn digitally by me","All elements were developed and acheived with jQuery..by me","No bootstrap or Material UI for practice although I use BS and tachyons..","...but don't sleep...I get down with React as well"],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
       // typing speed

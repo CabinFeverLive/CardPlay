@@ -202,6 +202,70 @@ body {
     justify-content: center;
   }
 
+  .typed_wrapMain{
+    display: block;
+    width: 125px;
+    height: auto;
+    padding: 15px;
+    padding-left: 45px;
+    color: lightslategrey;
+    /*centers it in the .banner*/
+    position: relative;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+
+  .logoContainerLeft{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin-left: 140px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+
+  .logoContainerRight{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 32%;
+  }
+
+  .logoContainerLeft > img{
+    height:50px;
+    width:50px;
+    margin: 3px;
+  }
+
+  .logoContainerRight > img{
+    height:50px;
+    width:50px;
+    margin: 3px;
+  }
+
+  .stackBoarder{
+    height:18em;
+    
+  }
+
+  .stackBoarderLeft{
+    height:18em;
+    
+  }
+
   @media all and (max-width: 480px) { 
     
     .navBar > a {
@@ -362,6 +426,7 @@ body {
       width: 125px;
       height: auto;
       padding: 15px;
+      padding-left: 55px;
       color: lightslategrey;
       /*centers it in the .banner*/
       position: relative;
@@ -373,6 +438,8 @@ body {
       -o-transform: translate(-50%,-50%);
       transform: translate(-50%,-50%);
     }
+
+    .typeMain
 
     .typed_wrapLeft {
       display: block;
