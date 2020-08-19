@@ -110,6 +110,11 @@ body {
     z-index: -1;
 
   }
+
+  .slick-slide img {
+    margin: 0 auto;
+  }
+
   
 
   
