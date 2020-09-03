@@ -1,6 +1,6 @@
 $( document ).ready(function() {
-    $('.projectSlide').slick();
-    $('.artSlide').slick();
+    
+   
 
   	$('#backButtonLeft').hide();
     $('#backButtonRight').hide();
@@ -17,6 +17,7 @@ $( document ).ready(function() {
     $('#backButtonLeft').show();
     $('#showButtonLeft').hide();
     $('.typedMain').hide();
+    $('.artSlide').slick();
   });
   
   $('#backButtonLeft').click(function(){
@@ -29,6 +30,7 @@ $( document ).ready(function() {
     $('.typeMain').show();
     $('#backButtonLeft').hide();
     
+    
   });
   
   $("#showButtonRight").click(function() {
@@ -40,7 +42,7 @@ $( document ).ready(function() {
     $('#backButtonRight').show();
     $('#showButtonRight').hide();
     $('.typedMain').hide();
-
+    $('.projectSlide').slick();
   });
   
   $('#backButtonRight').click(function(){
