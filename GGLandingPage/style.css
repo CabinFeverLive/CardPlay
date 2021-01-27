@@ -1,0 +1,77 @@
+body {
+    background-image: url("https://res.cloudinary.com/drbxih6it/image/upload/v1599004996/GG_BIO_PNG_ff3zp9.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    z-index: 1;
+}
+
+.overlay_boy_knock {
+    z-index: 2;
+    visibility: hidden;
+}
+
+.overlay_girl_knock {
+    z-index: 2;
+    visibility: hidden;
+}
+
+.overlay_boy_spit {
+    z-index: 2;
+    visibility: hidden;
+}
+
+.overlay_girl_spit {
+    z-index: 2;   
+    visibility: hidden;
+}
+
+.overlay_boy_knock {
+    z-index: 2;   
+    visibility: hidden;
+}
+
+.overlay_girl_knock {
+    z-index: 2;   
+    visibility: hidden;
+}
+
+.overlay_boy_faves {
+    z-index: 2;   
+    visibility: hidden;
+}
+
+.overlay_girl_faves {
+    z-index: 2;   
+    visibility: hidden;
+}
+
+.choices {
+    z-index: 2;
+    text-align: center;
+    top: 50%;
+    left: 55%;
+    margin-top: -50px;
+    margin-left: -100px;
+    position: fixed;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.choices button {
+    border: none;
+    justify-content: space-around;
+    margin: 5px 5px;
+    font-family: 'Bangers';
+    font-size: 1.5em;
+    background-color: #E2EFFD;
+    color: gray;
+}
+
+.choices button:hover {
+    cursor: pointer;
+    background-color: #FCEFE1;
+}
