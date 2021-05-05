@@ -10,6 +10,7 @@ body {
 .overlay_boy_knock {
     z-index: 2;
     visibility: hidden;
+    position: inherit;
 }
 
 .overlay_girl_knock {
@@ -20,6 +21,7 @@ body {
 .overlay_boy_spit {
     z-index: 2;
     visibility: hidden;
+    position: fixed;
 }
 
 .overlay_girl_spit {
