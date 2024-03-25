@@ -55,7 +55,10 @@ function Deck() {
       setTimeout(() => {
         gone.clear()
         api.start(i => to(i))
-      }, 600)
+      }, 600);
+
+      if (gone.has(index)) {
+        console.log(`Card ${index+1} is gone!`);}
   })
   // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
   return (
